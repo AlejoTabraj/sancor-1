@@ -1,0 +1,120 @@
+.heroWrapper{
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+    padding: 0 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.heroFormWrapper{
+	border-radius: 10px;
+	padding: 1.5rem;
+	width: 300px;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    margin-bottom: -1.5rem;
+    background-color: rgba(134, 122, 122, 0.8);    
+    
+}
+
+.heroFormWrapper h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+.heroFormWrapper input{
+	height: 1.5rem;
+    border-radius: 5px;
+    background-color: #e3e3e3;
+    font-style: italic;
+    padding-left: 4px;
+    border: none;
+}
+.heroFormWrapper button{
+	width: 6rem;
+	text-align: center;
+    height: 2rem;
+    background-color: #3a3773;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+}
+
+.circleWrap{
+	display: flex;
+	justify-content: flex-end;
+    padding: 0 4rem;
+    color: #3a3773;
+    margin-top: -1rem;
+    color: #fff;
+}
+
+.circle{
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: #3a3773;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+
+/* estylos para offer*/
+
+.heroOfferWrapper{
+	border: 1px solid black;
+	border-radius: 50%;
+	min-width: 250px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    margin-right: 2rem;
+    background-color: #fff;
+    color: #3a3773;
+}
+
+.heroOffer{
+	display: flex;
+	align-items: center;
+}
+
+.heroOffer h2, p {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.heroOffer h2{
+	font-size: 3.8rem;
+}
+
+
+@media screen and (max-width: 768px){
+
+        .heroWrapper{
+            align-items: center;
+            width: 100%;
+            padding: 0;
+
+        }
+        .heroFormWrapper{
+            width: 250px;
+        }
+        
+        .heroFormWrapper h2{
+            font-size: 1.3rem;
+        }
+        .heroOfferWrapper{
+            margin: 0;
+            padding: 0;
+        }
+}

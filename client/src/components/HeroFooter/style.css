@@ -1,0 +1,18 @@
+.heroFooter{
+	height: 13vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: #3a377e;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px){
+    .heroFooter{
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 0;
+    }
+}
