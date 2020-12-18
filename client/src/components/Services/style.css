@@ -1,8 +1,9 @@
 .servicesContainer{
 	width: 100%;
-    height: 70vh;
+    height: 90vh;
     color: #3a377e;
 }
+
 .servicesContainer h2{
 	width: 100%;
 	height: 20%;
@@ -10,7 +11,7 @@
 	justify-content: center;
 	align-items: flex-end;
 	margin-bottom: -2rem;
-	font-size: 3rem;
+	font-size: 6.3vh;
 }
 
 .servicesWrapper{
@@ -23,8 +24,8 @@
 }
 
 .serviceElement{
-	height: 16rem;
-	width: 12rem;
+	height: 42vh;
+	width: 32vh;
     border-radius: 10px;
     font-weight: 600;
 	display: flex;
@@ -35,12 +36,11 @@
     -moz-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.89);
     box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.89);
     padding-bottom: 0.7rem;
+    font-size: 3vh;
     
 }
 
 .imgContainer{
-    height: 8rem;
-    width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,21 +48,19 @@
 
 .imgContainer img{
     box-sizing: border-box;
-    height: 6rem;
-}
-.ser2 {
-    padding-bottom: 1.4rem;
+    height: 16vh;
 }
 
 .serviceElement a{
     text-decoration: none;
     background-color: #3a377e;
     color: #fff;
-    height: 1.7rem;
-    width: 10rem;
+    height: 5vh;
+    width: 26vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2.5vh;
     font-weight: 700;
 }
 
