@@ -32,8 +32,9 @@
 	justify-content: space-around;
     align-items: center;
     -webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.89);
--moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.89);
-box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.89);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.89);
+    box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.89);
+    padding-bottom: 0.7rem;
     
 }
 
@@ -49,6 +50,10 @@ box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.89);
     box-sizing: border-box;
     height: 6rem;
 }
+.ser2 {
+    padding-bottom: 1.4rem;
+}
+
 .serviceElement a{
     text-decoration: none;
     background-color: #3a377e;

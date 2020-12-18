@@ -8,7 +8,7 @@ export const Navbar = () => {
 			<img src={sancor} alt='sancor logo'/>		
 			<div className="navLinkWrap">
 				<ul>
-					<li><a href="./">SOY ASOCIADO</a></li>
+					<li><a href="https://www.sancorsalud.com.ar/contacto">SOY ASOCIADO</a></li>
 				</ul>
 			</div>
 		</nav>

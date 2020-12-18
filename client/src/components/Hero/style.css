@@ -1,5 +1,5 @@
 .heroWrapper{
-	min-height: 90vh;
+	min-height: 78vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -11,73 +11,75 @@
 
 
 .heroFormWrapper{
-	border-radius: 10px;
-	padding: 1.5rem;
-	width: 300px;
-	height: 130px;
+	border-radius: 2vh;
+	padding: 3.8vh 4vh;
+	width: 48vh;
+	height: 20vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
     margin-bottom: -1.5rem;
-    background-color: rgba(134, 122, 122, 0.8);    
+    background-color: rgba(167, 155, 155, 0.8);  
+    margin-top: 3vh;
     
 }
 
 .heroFormWrapper h2{
-    font-size: 1.6rem;
+    font-size: 4vh;
     font-weight: 700;
     color: #fff;
+    padding-left: 2vh;
+    margin-bottom: 0.5vh;
+    text-shadow: 2px 2px 6px rgb(8, 8, 8);
 }
 .heroFormWrapper input{
-	height: 1.5rem;
-    border-radius: 5px;
+	height: 4vh;
+    border-radius: 0.5vh;
     background-color: #e3e3e3;
     font-style: italic;
     padding-left: 4px;
     border: none;
+    margin-bottom: 0.5vh;
+
 }
 .heroFormWrapper button{
-	width: 6rem;
+	width: 15vh;
 	text-align: center;
-    height: 2rem;
+    height: 5vh;
     background-color: #3a3773;
     font-weight: 700;
     color: #fff;
+    border-radius: 0.5vh;
     border: none;
 }
 
 .arrow{
-
-    border: 1px solid black;
     display: flex;
     justify-content: center;
-    margin: 0 -30%;
+    margin: 0 -2rem;
 }
 .arrow img{
-
-    border: 1px solid black;
-    width: 10%;
-    margin: -10% -60%;
+    width: 3rem;
+    margin: -5rem -2rem;
     padding-bottom: 1.3rem;
-    padding-right: 1.2rem;
+    padding-right: 0;
     color: blue;
 
 
 }
 
 .circleWrap{
-    border: 1px solid black;
 	display: flex;
 	justify-content: flex-end;
-    padding: 0 6rem;
+    padding: 0 9vh;
     color: #3a3773;
-    margin-top: -1rem;
+    margin-top: -1vh;
     color: #fff;
 }
 
 .circle{
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 9vh;
+	height: 9vh;
 	background-color: #3a3773;
 	border-radius: 50%;
 	display: flex;
@@ -88,34 +90,28 @@
 
 
 /* estylos para offer*/
-
 .heroOfferWrapper{
+    width: 52vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroOfferWrapper img{
 	border: 1px solid black;
-	border-radius: 50%;
-	min-width: 250px;
-	min-height: 250px;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    margin-right: 2rem;
+    margin-right: 0;
     background-color: #fff;
     color: #3a3773;
 }
 
-.heroOffer{
-	display: flex;
-	align-items: center;
-}
 
-.heroOffer h2, p {
-	text-align: center;
-	font-size: 1.5rem;
-}
-
-.heroOffer h2{
-	font-size: 3.8rem;
-}
 
 
 @media screen and (max-width: 768px){
@@ -124,10 +120,10 @@
             align-items: center;
             width: 100%;
             padding: 0;
-
         }
         .heroFormWrapper{
             width: 250px;
+            margin-top: 1.5rem;
         }
         
         .heroFormWrapper h2{

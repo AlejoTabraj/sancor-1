@@ -20,12 +20,12 @@ export const Services = () => {
 			</div>
 
 
-			<div className="serviceElement">
+			<div className="serviceElement ser2">
 				<div className="imgContainer">
                     <img src={Grupo2} alt=''/>							
 				</div>
-				<h3>En Relación de <br/>Dependencia</h3>
-				<a href="./">QUIERO COTIZAR</a>				
+				<h3 className='card2'>En Relación de <br/>Dependencia</h3>
+				<a href="./" className='href2'>QUIERO COTIZAR</a>				
 			</div>
 
 
