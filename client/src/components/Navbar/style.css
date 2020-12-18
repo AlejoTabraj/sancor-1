@@ -16,11 +16,11 @@
     align-items: center;
 }
 .nav img{
-    width: 13rem;
+    width: 25vh;
 }
 .nav ul{
-    width: 13rem;
-    height: 3rem;
+    width: 21vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
 
 .nav ul li a{
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 2.4vh;
     color: white;
     
 }

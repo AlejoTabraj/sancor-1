@@ -32,7 +32,7 @@ export const Hero = () => {
     <section className="heroWrapper">
 		<div>
 		<form className="heroFormWrapper" onSubmit={handleSubmit}>            
-			<h2>¡Ingresá tu número <br/> y corizá tu plan ideal!</h2>	
+			<h2>¡Ingresá tu número <br/> y cotizá tu plan ideal!</h2>	
 			<input onChange={e => setTelephone(e.target.value)} type="tel" name="telefono" placeholder="Ej. 1123563009(sin0)"/>
             <button type='submit'>
             {cargando ? 'Cargando...': (gracias ? 'Listo': '¡COTIZÁ!')}
