@@ -17,7 +17,7 @@ export const Hero = () => {
 
         e.preventDefault();
          
-        await axios.post(`https://5000-bcb30292-5454-40a3-a579-40557d221e75.ws-us03.gitpod.io`, { telephone })
+        await axios.post(`https://sancor-test.herokuapp.com`, { telephone })
         setCargando(false);
         setGracias(true);
         setTimeout(() =>{
