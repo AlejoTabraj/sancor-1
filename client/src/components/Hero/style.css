@@ -1,5 +1,5 @@
 .heroWrapper{
-	min-height: 78vh;
+	min-height: 78.4vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -7,18 +7,19 @@
     padding: 0 15%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: -0.4vh;
 }
 
 
 .heroFormWrapper{
 	border-radius: 2vh;
-	padding: 3.8vh 4vh;
+	padding: 1vh 3vh;
 	width: 40vh;
-	height: 17vh;
+	height: 20vh;
 	display: flex;
 	flex-direction: column;
     margin-bottom: -1.5rem;
-    background-color: rgba(167, 155, 155, 0.8);  
+    background-color: rgba(7, 6, 6, 0.3);  
     margin-top: 3vh;
     
 }
@@ -32,20 +33,20 @@
     text-shadow: 2px 2px 6px rgb(8, 8, 8);
 }
 .heroFormWrapper input{
-	height: 4vh;
+	height: 6vh;
     border-radius: 0.5vh;
     background-color: #e3e3e3;
     font-style: italic;
     padding-left: 1vh;
     border: none;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 2vh;
 
 }
 .heroFormWrapper button{
 	width: 15vh;
 	text-align: center;
-    height: 5vh;
+    height: 9vh;
     background-color: #3a3773;
     font-weight: 700;
     color: #fff;

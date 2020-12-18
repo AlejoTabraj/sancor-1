@@ -17,4 +17,9 @@
 	font-size: 1.7rem;
     line-height: 2.5rem;
     font-weight: 500;
+    color: #3a377e;
+}
+
+.beneficiosContainer ul li p{
+    color: #000;
 }

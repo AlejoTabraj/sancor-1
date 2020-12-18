@@ -19,7 +19,7 @@
     width: 25vh;
 }
 .nav ul{
-    width: 21vh;
+    width: 26vh;
     height: 6vh;
     display: flex;
     align-items: center;
@@ -43,17 +43,25 @@
 }
 
 @media screen and (max-width: 480px){
+    .navWrapper{
+        height: auto;
+    }
     .nav{
         flex-direction: column;
         width: 100%;
+        height: auto;
     }
     .nav img{
         margin-top: 1rem;
     }
     .nav ul{
         margin: 1rem 0;
+
     }
-    .navWrapper{
-        height: auto;
+    /*.nav ul{
+        display: none;
     }
+    .nav ul li a{
+        display: none;
+    }*/
 }
