@@ -1,6 +1,8 @@
 import React, { useState} from 'react'
 import axios from 'axios'
 import Offer from '../img/30_OFF.svg'
+import Arrow from '../img/left-arrow.svg'
+
 import './style.css'
 
 
@@ -36,9 +38,14 @@ export const Hero = () => {
             {cargando ? 'Cargando...': (gracias ? 'Listo': '¡COTIZÁ!')}
             </button>
 		</form>	
+          <div>
+            <div className='arrow'>
+                <img src={Arrow} alt='flecha'></img>
+            </div>
 			<div className="circleWrap">				
 				<div className="circle">$0.00</div>				
-			</div>	
+			</div>
+           </div> 	
 		</div>
 		<div className="heroOfferWrapper">
             <img src={Offer} alt='oferta'/>
