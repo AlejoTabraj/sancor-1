@@ -11,7 +11,7 @@
 }
 
 .misterius{
-    width: 59vh;
+    width: 53vh;
     height: 30vh;
     padding-top: 2vh;
 }
@@ -136,9 +136,6 @@
         .heroFormWrapper{
             padding-top: 0.9em;
         }
-        .misterius{
-            width: 90%;
-        }
         .heroFormWrapper input{
          height: 5vh;
         }
@@ -147,6 +144,32 @@
             font-size: 1.57rem;
         }
 }
+@media screen and (max-width: 430px){
+            .heroFormWrapper h2{
+            font-size: 1.32rem;
+        }
+        .misterius{
+            width: 80%;
+        }
+
+}
+@media screen and (max-width: 390px){
+         
+        .misterius{
+            width: 85%;
+        }
+
+}
+
+@media screen and (max-width: 350px){
+        .misterius{
+            width: 90%;
+        }
+            .heroFormWrapper h2{
+            font-size: 1.29rem;
+        }
+
+}
 
 @media screen and (max-width: 330px){
             .heroFormWrapper h2{
@@ -154,9 +177,34 @@
         }
 
 }
+@media screen and (max-width: 320px){
+            .heroFormWrapper h2{
+            font-size: 1.2rem;
+        }
+
+}
 @media screen and (max-width: 300px){
             .heroFormWrapper h2{
             font-size: 1.1rem;
+        }
+
+}
+
+@media screen and (max-width: 282px){
+            .heroFormWrapper h2{
+            font-size: 1rem;
+        }
+
+}
+@media screen and (max-width: 262px){
+            .heroFormWrapper h2{
+            font-size: 0.9rem;
+        }
+
+}
+@media screen and (max-width: 242px){
+            .heroFormWrapper h2{
+            font-size: 0.8rem;
         }
 
 }
