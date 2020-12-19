@@ -20,7 +20,7 @@
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	padding: 0 30vh;
+	padding: 0 20%;
 }
 
 .serviceElement{
@@ -69,7 +69,11 @@
     font-weight: 700;
 }
 
-
+@media creen and (min-height: 1100){
+    .servicesWrapper{
+        padding: 0;
+    }
+}
 
 @media screen and (max-width: 768px){
     .servicesContainer{
@@ -89,6 +93,8 @@
     .serviceElement{
         margin-bottom: 1rem;
         border-radius: 20px;
+
+        width: 25vh;
     }
 
 }

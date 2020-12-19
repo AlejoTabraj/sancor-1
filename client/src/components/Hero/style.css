@@ -1,31 +1,36 @@
 .heroWrapper{
 	min-height: 78.4vh;
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: flex-end;
-    padding: 0 15%;
+    align-items: flex-end;
+    padding-right: 18%;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: -0.4vh;
 }
 
+.misterius{
+    width: 59vh;
+    height: 30vh;
+    padding-top: 2vh;
+}
 
 .heroFormWrapper{
+    box-sizing: border-box;
 	border-radius: 2vh;
 	padding: 1vh 3vh;
-	width: 40vh;
-	height: 20vh;
+	width: 100%;
+	height: 25vh;
 	display: flex;
 	flex-direction: column;
     margin-bottom: -1.5rem;
     background-color: rgba(7, 6, 6, 0.3);  
-    margin-top: 3vh;
-    
+    margin-top: 3vh;    
 }
 
 .heroFormWrapper h2{
-    font-size: 3.4vh;
+    font-size: 4vh;
     font-weight: 700;
     color: #fff;
     padding-left: 1vh;
@@ -40,13 +45,13 @@
     padding-left: 1vh;
     border: none;
     margin-bottom: 1vh;
-    font-size: 2vh;
+    font-size: 2.5vh;
 
 }
 .heroFormWrapper button{
 	width: 15vh;
 	text-align: center;
-    height: 9vh;
+    height: 5.5vh;
     background-color: #3a3773;
     font-weight: 700;
     color: #fff;
@@ -80,8 +85,8 @@
 }
 
 .circle{
-	width: 7.5vh;
-	height: 7.5vh;
+	width: 9vh;
+	height: 9vh;
 	background-color: #3a3773;
 	border-radius: 50%;
 	display: flex;
@@ -94,10 +99,11 @@
 
 /* estylos para offer*/
 .heroOfferWrapper{
-    width: 52vh;
+    width: 59vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .heroOfferWrapper img{
@@ -118,14 +124,15 @@
 
 @media screen and (max-width: 768px){
 
+
         .heroWrapper{
             align-items: center;
             width: 100%;
             padding: 0;
         }
-        
-        .heroOfferWrapper{
-            margin: 0;
-            padding: 0;
+        .misterius{
+            width: 85%;
         }
+        
+        
 }

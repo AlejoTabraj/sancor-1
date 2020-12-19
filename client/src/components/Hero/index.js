@@ -30,7 +30,7 @@ export const Hero = () => {
     }
     return (
     <section className="heroWrapper">
-		<div>
+		<div className='misterius'>
 		<form className="heroFormWrapper" onSubmit={handleSubmit}>            
 			<h2>¡Ingresá tu número <br/> y cotizá tu plan ideal!</h2>	
 			<input onChange={e => setTelephone(e.target.value)} type="tel" name="telefono" placeholder="Ej. 1123563009(sin0)"/>
