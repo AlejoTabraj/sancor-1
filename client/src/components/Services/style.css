@@ -15,12 +15,12 @@
 }
 
 .servicesWrapper{
-	height: 80%;
+	height: 70%;
     display: grid;
-    padding: 0 5%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 15% 15% 15% 15%;
+    align-items: end;
     justify-items: center;
+    justify-content: center;
 	
 }
 
@@ -71,6 +71,58 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1125px){
+        .servicesWrapper{
+        grid-template-columns: 20% 20% 20% 20%;
+
+    }
+
+
+}
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .servicesContainer{
+        margin-bottom: 24vh;
+    }
+        .servicesContainer h2{
+            text-align: center;        
+        }
+    .servicesWrapper{
+        margin-top: 5%;
+        padding: 5% 13%;
+        grid-template-columns: 45% 45%;
+        min-height: 70vh;
+        grid-gap: 1vh;
+
+    }
+
+}
+@media only screen 
+  and (min-width: 1900px) 
+  and (max-height: 1500px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .servicesContainer{
+        margin-bottom: 26vh;
+    }
+        .servicesContainer h2{
+            text-align: center;        
+        }
+    .servicesWrapper{
+        margin-top: 5%;
+        padding: 5% 25%;
+        grid-template-columns: 45% 45%;
+        min-height: 70vh;
+        grid-gap: 1vh;
+
+    }
+
+}
+
+
 
 @media screen and (max-width: 855px){
     .servicesContainer{
@@ -80,7 +132,7 @@
     .servicesWrapper{
         margin-top: 5%;
         padding: 5% 10%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 45% 45%;
 
     }
     .servicesContainer h2{
