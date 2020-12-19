@@ -16,11 +16,12 @@
 
 .servicesWrapper{
 	height: 80%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	text-align: center;
-	padding: 0 20%;
+    display: grid;
+    padding: 0 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+	
 }
 
 .serviceElement{
@@ -70,22 +71,20 @@
     cursor: pointer;
 }
 
-@media creen and (min-height: 1100){
-    .servicesWrapper{
-        padding: 0;
-    }
-}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 855px){
     .servicesContainer{
-        height: 80rem;
+        height: auto;
         text-align: center;
     }
     .servicesWrapper{
-        flex-direction: column;
+        margin-top: 5%;
+        padding: 5% 10%;
+        grid-template-columns: 1fr 1fr;
 
     }
     .servicesContainer h2{
+        margin-top: 8%;
         justify-content: center;
         align-items: center;
         height: 15%;
@@ -98,4 +97,11 @@
         width: 25vh;
     }
 
+}
+
+@media screen and (max-width: 480px){
+    .servicesWrapper{
+        margin-top: 10%;
+        grid-template-columns: 1fr;
+    }
 }
