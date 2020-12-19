@@ -1,7 +1,8 @@
-import React, { useState} from 'react'
+import React, { useState, useRef, useEffect} from 'react'
 import axios from 'axios'
 import Offer from '../img/30_OFF.svg'
 import Arrow from '../img/left-arrow.svg'
+
 
 import './style.css'
 
@@ -11,8 +12,11 @@ export const Hero = () => {
     const [telephone, setTelephone] = useState(0);
     const [cargando, setCargando] = useState(false);
     const [gracias, setGracias] = useState(false);
+    const inputRef = useRef();
 
-    
+    const focusInput = _ =>{
+        inputRef.current.focus()
+    }
 
     const handleSubmit = async(e) =>{
          setCargando(true);
@@ -28,12 +32,19 @@ export const Hero = () => {
         e.target.reset();
 
     }
+
+    useEffect(()=>{
+        focusInput()
+    
+    }, [])
+
+
     return (
-    <section className="heroWrapper">
+    <section className="heroWrapper" id='hero'>
 		<div className='misterius'>
 		<form className="heroFormWrapper" onSubmit={handleSubmit}>            
 			<h2>¡Ingresá tu número <br/> y cotizá tu plan ideal!</h2>	
-			<input onChange={e => setTelephone(e.target.value)} type="tel" name="telefono" placeholder="Ej. 1123563009(sin0)"/>
+			<input minLength='5' ref={inputRef} onChange={e => setTelephone(e.target.value)} type="tel"  name="telefono" placeholder=" Ej.1123563009(sin0)"/>
             <button type='submit'>
             {cargando ? 'Cargando...': (gracias ? 'Listo': '¡COTIZÁ!')}
             </button>

@@ -67,6 +67,7 @@
     justify-content: center;
     font-size: 2vh;
     font-weight: 700;
+    cursor: pointer;
 }
 
 @media creen and (min-height: 1100){
