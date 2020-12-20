@@ -12,7 +12,10 @@
 
 @media screen and (max-width: 768px){
     .heroFooter{
-        font-size: 1.5vh;
+        font-size: 10px;
+    }
+    .footerWrap{
+        width: 90%;
     }
 }
 @media only screen 
