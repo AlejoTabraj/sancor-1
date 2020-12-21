@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect} from 'react'
+import React, { useState} from 'react'
 import axios from 'axios'
 import Offer from '../img/30_OFF.svg'
 import Arrow from '../img/left-arrow.svg'
@@ -8,15 +8,13 @@ import './style.css'
 
 
 
-export const Hero = () => {
+export const Hero = ({inputRef}) => {
     const [telephone, setTelephone] = useState(0);
     const [cargando, setCargando] = useState(false);
     const [gracias, setGracias] = useState(false);
-    const inputRef = useRef();
+   
 
-    const focusInput = _ =>{
-        inputRef.current.focus()
-    }
+    
 
     const handleSubmit = async(e) =>{
          setCargando(true);
@@ -33,10 +31,6 @@ export const Hero = () => {
 
     }
 
-    useEffect(()=>{
-        focusInput()
-    
-    }, [])
 
 
     return (

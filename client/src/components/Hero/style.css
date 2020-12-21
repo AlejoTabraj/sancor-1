@@ -1,5 +1,5 @@
 .heroWrapper{
-	min-height: 78.4vh;
+	height: 78.4vh;
     display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -132,9 +132,7 @@
             align-items: center;
             width: 100%;
             padding: 0;
-        }
-        .heroFormWrapper{
-            padding-top: 0.9em;
+            height: 72.4vh;
         }
         .heroFormWrapper input{
          height: 5vh;
@@ -146,17 +144,71 @@
 }
 @media screen and (max-width: 430px){
             .heroFormWrapper h2{
-            font-size: 1.32rem;
+            font-size: 22px;
         }
         .misterius{
-            width: 80%;
+            width: 72%;
+            height: 20vh;
+            padding: 0;
+        }
+        .heroFormWrapper{
+            height: 100%;
+            margin: 0;
+            border-radius: 8px;
+        }
+        .circleWrap{
+            padding: 0 7vh;
+            margin-top: -3.5vh;
+        }
+        .circle{
+            width: 7vh;
+            height: 7vh;
+        }
+
+}
+
+@media screen and (max-width: 416px){
+         
+        .misterius{
+            width: 75%;
+        }
+
+}
+
+@media screen and (max-width: 400px){
+         
+        .misterius{
+            width: 77%;
         }
 
 }
 @media screen and (max-width: 390px){
          
         .misterius{
+            width: 80%;
+        }
+
+}
+
+@media screen and (max-width: 380px){
+         
+        .misterius{
             width: 85%;
+        }
+
+}
+@media screen and (max-width: 363px){
+         
+        .misterius{
+            width: 85%;
+        }
+
+}
+
+@media screen and (max-width: 363px){
+         
+        .misterius{
+            width: 87%;
         }
 
 }
@@ -173,32 +225,44 @@
 
 @media screen and (max-width: 330px){
             .heroFormWrapper h2{
-            font-size: 1.29rem;
+            font-size: 1.08rem;
         }
-
+        .misterius{
+            width: 80%;
+        }
 }
 @media screen and (max-width: 320px){
             .heroFormWrapper h2{
-            font-size: 1.2rem;
+            font-size: 1.04rem;
         }
 
 }
-@media screen and (max-width: 300px){
-            .heroFormWrapper h2{
-            font-size: 1.1rem;
-        }
-
-}
-
-@media screen and (max-width: 282px){
+@media screen and (max-width: 304px){
             .heroFormWrapper h2{
             font-size: 1rem;
         }
 
 }
+
+
+@media screen and (max-width: 292px){
+            .heroFormWrapper h2{
+            font-size: 0.85rem;
+        }
+
+}
+@media screen and (max-width: 282px){
+            .heroFormWrapper h2{
+            font-size: 0.85rem;
+        }
+                .circle{
+            display: none;
+        }
+
+}
 @media screen and (max-width: 262px){
             .heroFormWrapper h2{
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
 }

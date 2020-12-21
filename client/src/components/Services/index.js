@@ -6,8 +6,13 @@ import Grupo3 from '../img/Mono3.svg'
 import Grupo4 from '../img/Auto4.svg'
 import './style.css'
 
-export const Services = () => {
+export const Services = ({focusInput}) => {
 
+    const focusD = _ => {
+        setTimeout( _ => {
+            focusInput()
+        }, 500)
+    } 
     
     return (
         <div className="servicesContainer">
@@ -19,7 +24,7 @@ export const Services = () => {
                     <img src={Grupo} alt=''/>					
 				</div>
 				<h3>Grupo Familiar</h3>
-				<Link to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>				
+				<Link onClick={focusD} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>				
 			</div>
 
 
@@ -28,7 +33,7 @@ export const Services = () => {
                     <img src={Grupo2} alt=''/>							
 				</div>
 				<h3 className='card2'>En Relación de <br/>Dependencia</h3>
-				<Link className='link' to="nav"  smooth={true} duration={700}>QUIERO COTIZAR</Link>				
+				<Link onClick={focusD} className='link' to="nav"  smooth={true} duration={700}>QUIERO COTIZAR</Link>				
 			</div>
 
 
@@ -37,7 +42,7 @@ export const Services = () => {
                     <img src={Grupo3} alt=''/>					
 				</div>
 				<h3>Monotributistas</h3>
-				<Link to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
+				<Link onClick={focusD} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
 			</div>
 
 
@@ -46,7 +51,7 @@ export const Services = () => {
                     <img src={Grupo4} alt=''/>					
 				</div>
 				<h3>Autónomos</h3>
-				<Link to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
+				<Link onClick={focusD} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
 			</div>
 			
 		</div>
