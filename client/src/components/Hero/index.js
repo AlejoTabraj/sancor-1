@@ -28,6 +28,7 @@ export const Hero = ({inputRef}) => {
             setGracias(false)
         }, 800)
         e.target.reset();
+        window.gtag('event', 'click', {'event_category': 'boton', 'event_label': 'formulario'});
 
     }
 
@@ -40,7 +41,7 @@ export const Hero = ({inputRef}) => {
 			<h2>¡Ingresá tu número <br/> y cotizá tu plan ideal!</h2>	
 			<input minLength='5' ref={inputRef} onChange={e => setTelephone(e.target.value)} type="tel"  name="telefono" placeholder=" Ej.1123563009(sin0)" required/>
             <button type='submit'>
-            {cargando ? 'Cargando...': (gracias ? 'Listo': '¡COTIZÁ!')}
+            {cargando ? 'Cargando...': (gracias ? 'Gracias!': '¡COTIZÁ!')}
             </button>
 		</form>	
           <div>

@@ -13,6 +13,27 @@ export const Services = ({focusInput}) => {
             focusInput()
         }, 500)
     } 
+
+    //Probando google analytics
+    const famiEvent = () =>{
+        focusD();
+        window.gtag('event', 'click', {'event_category': 'boton', 'event_label': 'familia'});
+    }
+    const depeEvent = () =>{
+        focusD();
+        window.gtag('event', 'click', {'event_category': 'boton', 'event_label': 'en_blanco'});
+    }
+    const monoEvent = () =>{
+        focusD();
+        window.gtag('event', 'click', {'event_category': 'boton', 'event_label': 'monotributistas'});
+    }
+    const autoEvent = () =>{
+        focusD();
+        window.gtag('event', 'click', {'event_category': 'boton', 'event_label': 'autonomos'});
+    }
+    
+
+
     
     return (
         <div className="servicesContainer">
@@ -24,7 +45,7 @@ export const Services = ({focusInput}) => {
                     <img src={Grupo} alt=''/>					
 				</div>
 				<h3>Grupo Familiar</h3>
-				<Link onClick={focusD} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>				
+				<Link onClick={famiEvent} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>				
 			</div>
 
 
@@ -33,7 +54,7 @@ export const Services = ({focusInput}) => {
                     <img src={Grupo2} alt=''/>							
 				</div>
 				<h3 className='card2'>En Relación de <br/>Dependencia</h3>
-				<Link onClick={focusD} className='link' to="nav"  smooth={true} duration={700}>QUIERO COTIZAR</Link>				
+				<Link onClick={depeEvent} className='link' to="nav"  smooth={true} duration={700}>QUIERO COTIZAR</Link>				
 			</div>
 
 
@@ -42,7 +63,7 @@ export const Services = ({focusInput}) => {
                     <img src={Grupo3} alt=''/>					
 				</div>
 				<h3>Monotributistas</h3>
-				<Link onClick={focusD} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
+				<Link onClick={monoEvent} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
 			</div>
 
 
@@ -51,7 +72,7 @@ export const Services = ({focusInput}) => {
                     <img src={Grupo4} alt=''/>					
 				</div>
 				<h3>Autónomos</h3>
-				<Link onClick={focusD} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
+				<Link onClick={autoEvent} to="nav" smooth={true} duration={700}>QUIERO COTIZAR</Link>			
 			</div>
 			
 		</div>
